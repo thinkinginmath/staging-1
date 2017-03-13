@@ -1,0 +1,33 @@
+{
+  "name": "uu",
+  "description": "Plugin that align layer relative to more options for Bohemian Coding's Sketch 3",
+  "author": "Lucien Lee",
+  "email": "lucien@lucienlee.cc",
+  "homepage": "https://github.com/LucienLee/AlignTo",
+  "version": 2.0,
+  "identifier": "cc.lucienlee.sketch.align.to",
+  "compatibleVersion": "3.3.2",
+  "bundleVersion": 1,
+  "commands": [
+  	{
+      "name": "Set Source Object",
+      "identifier": "source",
+      "shortcut": "cmd option control s",
+      "script": "uu.cocoascript",
+      "handler": "selectSource"
+    },
+    {
+      "name": "Set Destination Page",
+      "identifier": "destination",
+      "shortcut": "cmd option control d",
+      "script": "uu.cocoascript",
+      "handler": "selectDestination"
+    }
+  ],
+  "menu": {
+    "items": [
+      "source",
+      "destination"
+    ]
+  }
+}
